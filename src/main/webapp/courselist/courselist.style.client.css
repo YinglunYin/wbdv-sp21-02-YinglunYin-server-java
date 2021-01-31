@@ -1,0 +1,35 @@
+body{
+    background: #EBEBEB;
+}
+
+.wbdv-courselist-title-container{
+    box-shadow:0px 1px 2px #E1E1E1;
+    border: 1px solid #d9d9d9;
+    background-color: #EBEBEB;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.wbdv-courselist-title{
+    font-size: medium;
+    font-weight: bold;
+    color: #6B6B6B;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.wbdv-courselist-body{
+    background: #F5F5F5;
+    padding: 15px 10px;
+    border: 1px solid #d9d9d9;
+}
+
+.wbdv-courselist-date{
+    font-weight: bold;
+    color: #6B6B6B;
+}
+
+.wbdv-navbar-brand-font{
+    font-weight: bold;
+}

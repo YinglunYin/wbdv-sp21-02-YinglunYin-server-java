@@ -12,67 +12,170 @@
               integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
               crossorigin="anonymous">
 
+        <link href="./courselist.style.client.css" rel="stylesheet">
+
     </head>
     <body>
 
         <!-- Nav bar -->
-        <nav class="navbar navbar-dark bg-primary d-flex justify-content-start">
-            <div class="row">
-                <div class="col-">
-                    <!-- Nav bar brand -->
-                    <span class="navbar-brand">
-                        <a class="navbar-brand" href="#"><i class="fas fa-bars"></i></a>
-                        <!-- hidden on ex-small-->
-                        <span class="d-none d-md-inline">Course Manager</span>
+        <nav class="navbar navbar-dark bg-primary sticky-top d-flex justify-content-start">
+
+            <!-- Nav bar brand -->
+            <span class="navbar-brand">
+                <a class="navbar-brand" href="#"><i class="fas fa-bars"></i></a>
+                <!-- hidden on ex-small-->
+                <span class="d-none d-md-inline wbdv-navbar-brand-font">Course Manager</span>
+            </span>
+
+            <form class="w-75 d-inline">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="New Course Title">
+                    <button class="btn btn-danger rounded-circle ml-3" type="submit"><i
+                            class="fas fa-plus"></i></button>
                     </span>
                 </div>
-                <div class="col-">
-                    <!-- input form-->
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="text"
-                               placeholder="New Course Title">
-                        <button class="btn my-2 my-sm-0" type="submit"><i
-                                class="fas fa-plus"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-
+            </form>
         </nav>
 
-        <div class="container">
-            <h1>Dashboard Table</h1>
-
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Owned by</th>
-                    <th>Last Modified</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>CS5610</td>
-                    <td>Jannunzi</td>
-                    <td>1/25/2021</td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>CS5611</td>
-                    <td>Jannunzi</td>
-                    <td>1/25/2021</td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>CS5613</td>
-                    <td>Jannunzi</td>
-                    <td>1/25/2021</td>
-                    <td>X</td>
-                </tr>
-                </tbody>
-            </table>
+        <!-- Course list title -->
+        <div class="container-fulid wbdv-courselist-title-container">
+            <div class="row wbdv-courselist-title">
+                <div class="col-5">Title</div>
+                <div class="col-sm-2 d-none d-sm-inline">Owned by</div>
+                <div class="col-sm-2 d-none d-sm-inline">Modified</div>
+                <div class="col-sm-1 d-none d-sm-inline"><i class="fas fa-th"></i></div>
+                <div class="col-sm-1 d-none d-sm-inline"><i class="fas fa-sort-alpha-up-alt"></i>
+                </div>
+            </div>
         </div>
+
+        <!-- Course list-->
+        <div class="container-fulid">
+            <div class="row mx-sm-5 wbdv-courselist-body">
+                <div class="col-5">
+                    <a href="../editor/editor.template.client.html">
+                        <i class="fas fa-file-alt"></i> CS5500 Software Engineer Graduate
+                    </a>
+                </div>
+                <div class="col-sm-2 d-none d-sm-inline">me</div>
+                <div class="col-sm-4 d-none d-sm-inline">6:45 PM</div>
+                <div class="col-auto ml-auto float-right">X</div>
+            </div>
+
+            <div class="row mx-sm-5 wbdv-courselist-body">
+                <div class="col-5">
+                    <a href="../editor/editor.template.client.html">
+                        <i class="fas fa-file-alt"></i> CS4550 Software Engineer UnderGraduate
+                    </a>
+                </div>
+                <div class="col-sm-2 d-none d-sm-inline">me</div>
+                <div class="col-sm-4 d-none d-sm-inline">6:45 PM</div>
+                <div class="col-auto ml-auto float-right">X</div>
+            </div>
+
+            <div class="row mx-sm-5 wbdv-courselist-body">
+                <div class="col-5">
+                    <a href="../editor/editor.template.client.html">
+                        <i class="fas fa-file-alt"></i> CS4550 WebDev Graduate
+                    </a>
+                </div>
+                <div class="col-sm-2 d-none d-sm-inline">me</div>
+                <div class="col-sm-4 d-none d-sm-inline">6:45 PM</div>
+                <div class="col-auto ml-auto float-right">X</div>
+            </div>
+
+            <div class="row mx-sm-5 wbdv-courselist-body">
+                <div class="col-5">
+                    <a href="../editor/editor.template.client.html">
+                        <i class="fas fa-file-alt"></i> CS5200 Database
+                    </a>
+                </div>
+                <div class="col-sm-2 d-none d-sm-inline">me</div>
+                <div class="col-sm-4 d-none d-sm-inline">6:45 PM</div>
+                <div class="col-auto ml-auto float-right">X</div>
+            </div>
+
+            <p class="mx-sm-5 mt-4 mb-2 wbdv-courselist-date">Yesterday</p>
+
+            <div class="row mx-sm-5 wbdv-courselist-body">
+                <div class="col-5">
+                    <a href="../editor/editor.template.client.html">
+                        <i class="fas fa-file-alt"></i> WEBDEV 2 - React
+                    </a>
+                </div>
+                <div class="col-sm-2 d-none d-sm-inline">me</div>
+                <div class="col-sm-4 d-none d-sm-inline">6:45 PM</div>
+                <div class="col-auto ml-auto float-right">X</div>
+            </div>
+
+            <div class="row mx-sm-5 wbdv-courselist-body">
+                <div class="col-5">
+                    <a href="../editor/editor.template.client.html">
+                        <i class="fas fa-file-alt"></i> CS5500 Software Engineer Graduate
+                    </a>
+                </div>
+                <div class="col-sm-2 d-none d-sm-inline">me</div>
+                <div class="col-sm-4 d-none d-sm-inline">6:45 PM</div>
+                <div class="col-auto ml-auto float-right">X</div>
+            </div>
+
+            <div class="row mx-sm-5 wbdv-courselist-body">
+                <div class="col-5">
+                    <a href="../editor/editor.template.client.html">
+                        <i class="fas fa-file-alt"></i> CS4550 Software Engineer UnderGraduate
+                    </a>
+                </div>
+                <div class="col-sm-2 d-none d-sm-inline">me</div>
+                <div class="col-sm-4 d-none d-sm-inline">6:45 PM</div>
+                <div class="col-auto ml-auto float-right">X</div>
+            </div>
+
+            <div class="row mx-sm-5 wbdv-courselist-body">
+                <div class="col-5">
+                    <a href="../editor/editor.template.client.html">
+                        <i class="fas fa-file-alt"></i> CS4550 WebDev Graduate
+                    </a>
+                </div>
+                <div class="col-sm-2 d-none d-sm-inline">me</div>
+                <div class="col-sm-4 d-none d-sm-inline">6:45 PM</div>
+                <div class="col-auto ml-auto float-right">X</div>
+            </div>
+
+            <div class="row mx-sm-5 wbdv-courselist-body">
+                <div class="col-5">
+                    <a href="../editor/editor.template.client.html">
+                        <i class="fas fa-file-alt"></i> CS5500 Software Engineer Graduate
+                    </a>
+                </div>
+                <div class="col-sm-2 d-none d-sm-inline">me</div>
+                <div class="col-sm-4 d-none d-sm-inline">6:45 PM</div>
+                <div class="col-auto ml-auto float-right">X</div>
+            </div>
+
+            <div class="row mx-sm-5 wbdv-courselist-body">
+                <div class="col-5">
+                    <a href="../editor/editor.template.client.html">
+                        <i class="fas fa-file-alt"></i> CS4550 Software Engineer UnderGraduate
+                    </a>
+                </div>
+                <div class="col-sm-2 d-none d-sm-inline">me</div>
+                <div class="col-sm-4 d-none d-sm-inline">6:45 PM</div>
+                <div class="col-auto ml-auto float-right">X</div>
+            </div>
+
+            <div class="row mx-sm-5 wbdv-courselist-body">
+                <div class="col-5">
+                    <a href="../editor/editor.template.client.html">
+                        <i class="fas fa-file-alt"></i> CS4550 WebDev Graduate
+                    </a>
+                </div>
+                <div class="col-sm-2 d-none d-sm-inline">me</div>
+                <div class="col-sm-4 d-none d-sm-inline">6:45 PM</div>
+                <div class="col-auto ml-auto float-right">X</div>
+            </div>
+
+        </div>
+
+
     </body>
 </html>
