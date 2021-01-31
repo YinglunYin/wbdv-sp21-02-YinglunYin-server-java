@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CourseManager</title>
+
+        <!-- Bootstrap css-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+              rel="stylesheet"/>
+        <!-- FontAwesome css-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+              integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+              crossorigin="anonymous">
+
+    </head>
+    <body>
+
+        <!-- Nav bar -->
+        <nav class="navbar navbar-dark bg-primary d-flex justify-content-start">
+            <div class="row">
+                <div class="col-">
+                    <!-- Nav bar brand -->
+                    <span class="navbar-brand">
+                        <a class="navbar-brand" href="#"><i class="fas fa-bars"></i></a>
+                        <!-- hidden on ex-small-->
+                        <span class="d-none d-md-inline">Course Manager</span>
+                    </span>
+                </div>
+                <div class="col-">
+                    <!-- input form-->
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="text"
+                               placeholder="New Course Title">
+                        <button class="btn my-2 my-sm-0" type="submit"><i
+                                class="fas fa-plus"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="container">
+            <h1>Dashboard Table</h1>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Owned by</th>
+                    <th>Last Modified</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>CS5610</td>
+                    <td>Jannunzi</td>
+                    <td>1/25/2021</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>CS5611</td>
+                    <td>Jannunzi</td>
+                    <td>1/25/2021</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>CS5613</td>
+                    <td>Jannunzi</td>
+                    <td>1/25/2021</td>
+                    <td>X</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
