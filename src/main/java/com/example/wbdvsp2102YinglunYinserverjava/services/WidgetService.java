@@ -28,7 +28,7 @@ public class WidgetService {
 
   public Widget createWdiget(String topicId, Widget widget) {
     widget.setTopicId(topicId);
-    widget.setId(new Date().getTime());
+    widget.set_id(new Date().getTime());
     widgets.add(widget);
     return widget;
   }
@@ -49,7 +49,7 @@ public class WidgetService {
 
   public int updateWidget(String wid, Widget widget) {
     for (int i = 0; i < widgets.size(); i++) {
-      if (widgets.get(i).getId().equals(wid)) {
+      if (widgets.get(i).get_id().equals(Long.parseLong(wid))) {
         widgets.set(i, widget);
         return i;
       }
@@ -60,7 +60,7 @@ public class WidgetService {
   public int deleteWidget(String wid) {
     int index = -1;
     for (int i = 0; i < widgets.size(); i++) {
-      if (widgets.get(i).getId().equals(wid)) {
+      if (widgets.get(i).get_id().equals(Long.parseLong(wid))) {
         index = i;
         widgets.remove(index);
         return 1;

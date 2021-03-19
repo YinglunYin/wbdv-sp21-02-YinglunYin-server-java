@@ -2,7 +2,7 @@ package com.example.wbdvsp2102YinglunYinserverjava.models;
 
 public class Widget {
   private String name;
-  private Long id;
+  private Long _id;
   private String type;
   private String topicId;
   private int widgetOrder;
@@ -17,9 +17,9 @@ public class Widget {
   private String url;
   private String href;
 
-  public Widget(String name, Long id, String type, String topicId, int widgetOrder, Integer size, String text, Integer width, Integer height, String cssClass, String style, String value, String src, String url, String href) {
+  public Widget(String name, Long _id, String type, String topicId, int widgetOrder, Integer size, String text, Integer width, Integer height, String cssClass, String style, String value, String src, String url, String href) {
     this.name = name;
-    this.id = id;
+    this._id = _id;
     this.type = type;
     this.topicId = topicId;
     this.widgetOrder = widgetOrder;
@@ -35,8 +35,8 @@ public class Widget {
     this.href = href;
   }
 
-  public Widget(Long id, String topicId, String type,  Integer size, String text) {
-    this.id = id;
+  public Widget(Long _id, String topicId, String type, Integer size, String text) {
+    this._id = _id;
     this.type = type;
     this.topicId = topicId;
     this.size = size;
@@ -54,12 +54,12 @@ public class Widget {
     this.name = name;
   }
 
-  public Long getId() {
-    return id;
+  public Long get_id() {
+    return _id;
   }
 
-  public void setId(Long id) {
-    this.id = id;
+  public void set_id(Long _id) {
+    this._id = _id;
   }
 
   public String getType() {
