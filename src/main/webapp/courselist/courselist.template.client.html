@@ -17,39 +17,35 @@
     </head>
     <body>
 
-        <!-- Nav bar -->
         <nav class="navbar navbar-dark bg-primary sticky-top d-flex justify-content-start">
 
-            <!-- Nav bar brand -->
             <span class="navbar-brand">
                 <a class="navbar-brand" href="#"><i class="fas fa-bars"></i></a>
-                <!-- hidden on ex-small-->
-                <span class="d-none d-md-inline font-weight-bold">Course Manager</span>
+                <span class="d-none d-lg-inline font-weight-bold">Course Manager</span>
             </span>
 
             <form class="w-75 d-inline">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="New Course Title">
                     <button class="btn btn-danger rounded-circle ml-3" type="submit"><i
-                            class="fas fa-plus"></i></button>
-                    </span>
+                            class="fas fa-plus"></i>
+                    </button>
+                    </input>
                 </div>
             </form>
         </nav>
 
-        <!-- Course list title -->
         <div class="container-fulid wbdv-courselist-title-container">
             <div class="row wbdv-courselist-title">
                 <div class="col-5">Title</div>
                 <div class="col-sm-2 d-none d-sm-inline">Owned by</div>
                 <div class="col-sm-2 d-none d-sm-inline">Modified</div>
-                <div class="col-sm-1 d-none d-sm-inline"><i class="fas fa-th"></i></div>
-                <div class="col-sm-1 d-none d-sm-inline"><i class="fas fa-sort-alpha-up-alt"></i>
+                <div class="col-sm-1 d-none d-sm-inline"><i class="fas fa-th float-right"></i></div>
+                <div class="col-sm-1 d-none d-sm-inline"><i class="fas fa-sort-alpha-up-alt float-right"></i>
                 </div>
             </div>
         </div>
 
-        <!-- Course list-->
         <div class="container-fulid">
             <div class="row mx-sm-5 wbdv-courselist-body">
                 <div class="col-5">
@@ -175,6 +171,10 @@
             </div>
 
         </div>
+
+        <button class="btn btn-danger rounded-circle ml-3 fixed-btn" type="submit"><i
+                class="fas fa-plus"></i>
+        </button>
 
 
     </body>
