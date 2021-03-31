@@ -46,7 +46,7 @@ public class WidgetController {
           @PathVariable("tid") String topicId,
           @RequestBody Widget widget
   ){
-      return service.createWidget(topicId, widget);
+      return service.createWdiget(topicId, widget);
   }
 
   @PutMapping("/api/widgets/{wid}")
@@ -55,7 +55,6 @@ public class WidgetController {
           @RequestBody Widget widget
   ){
     return service.updateWidget(wid, widget);
-
   }
 
   @DeleteMapping("/api/widgets/{wid}")
